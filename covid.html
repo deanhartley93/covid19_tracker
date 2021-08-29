@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Cases</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+      />
+  </head>
+  <body class="bg-gray">
+    <header>
+      Dean Hartley <br>
+      API sourced from: <a href="https://github.com/M-Media-Group/Covid-19-API">GitHub</a>
+    </header>
+
+    <!-- Main container for blocks-->
+    <div class="vstack gap-3 align-items-center p-1">
+      <!--Date-->
+      <div class="w-50 p-2 border border-dark rounded bg-light">
+        Last Updated: <h5 id="updated">-</h5>
+      </div>
+      <!-- Country covid data-->
+      <div class="w-50 p-2 border border-dark rounded bg-light">
+        <h2>Worldwide Covid Cases By Country</h2>
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              Country<br>
+              <h5>UK:</h5>
+              <h5>Italy:</h5>
+              <h5>Mexico:</h5>
+              <h5>Canada:</h5>
+              <h5>Japan:</h5>
+              <h5>China:</h5>
+            </div>
+              <!-- Total Cases Column-->
+              <div class="col">
+                Total Cases <br>
+              <h5 id="uk_cases">-</h5>
+              <h5 id="italy_cases">-</h5>
+              <h5 id="mexico_cases">-</h5>
+              <h5 id="canada_cases">-</h5>
+              <h5 id="japan_cases">-</h5>
+              <h5 id="china_cases">-</h5>
+              </div>
+              <!-- Total Deaths Column-->
+              <div class="col">
+                Total Deaths <br>
+              <h5 id="uk_deaths">-</h5>
+              <h5 id="italy_deaths">-</h5>
+              <h5 id="mexico_deaths">-</h5>
+              <h5 id="canada_deaths">-</h5>
+              <h5 id="japan_deaths">-</h5>
+              <h5 id="china_deaths">-</h5>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- United States covid data-->
+      <div class="w-50 p-2 border border-dark rounded bg-light">
+        <h2>United States Covid Cases</h2>
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              State<br>
+              <h5>California:</h5>
+              <h5>New York:</h5>
+              <h5>Wash D.C:</h5>
+              <h5>Oregon:</h5>
+              <h5>Texas</h5>
+              <h5>Colorado:</h5>
+              </div>
+              <!-- Total Cases Column-->
+            <div class="col">
+              Total Cases <br>
+              <h5 id="california_cases">-</h5>
+              <h5 id="newyork_cases">-</h5>
+              <h5 id="washdc_cases">-</h5>
+              <h5 id="oregon_cases">-</h5>
+              <h5 id="texas_cases">-</h5>
+              <h5 id="colorado_cases">-</h5>
+            </div>
+            <!-- Total Deaths Column-->
+            <div class="col">
+              Total Deaths <br>
+              <h5 id="california_deaths">-</h5>
+              <h5 id="newyork_deaths">-</h5>
+              <h5 id="washdc_deaths">-</h5>
+              <h5 id="oregon_deaths">-</h5>
+              <h5 id="texas_deaths">-</h5>
+              <h5 id="colorado_deaths">-</h5>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+          <!-- Pennsylvania covid data-->
+          <div class="w-50 p-2 border border-dark rounded bg-light">
+          <h2>Pennsylvania Cases</h2>
+          <br />
+          <div class="container">
+            <div class="row">
+              <!-- Confirmed-->
+              <div class="col">
+                Confirmed <br>
+                <h5 id="penn_cases">0-</h5>
+              </div>
+              <!-- Total Deaths Column-->
+                <div class="col">
+                  Total Deaths <br>
+                  <h5 id="penn_deaths">0-</h5>
+                </div>
+                <!-- Updated-->
+                <div class="col">
+                  Last Updated <br>
+                  <h6 id="penn_updated">-</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- Footer-->
+    <div class="w-50 p-2 border align-items-center">
+      Dean Hartley- 2021 <br>
+      <a href="www.deanh.io">deanh.io</a>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
